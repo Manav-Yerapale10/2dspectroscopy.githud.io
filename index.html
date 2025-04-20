@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2D NMR HSQC Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧬 2D NMR HSQC Simulator</h1>
+
+    <label>1H Chemical Shifts (ppm):</label>
+    <input type="text" id="hShifts" value="7.1, 7.5, 8.0"/>
+
+    <label>15N Chemical Shifts (ppm):</label>
+    <input type="text" id="nShifts" value="105.3, 110.2, 115.7"/>
+
+    <label>Δ1H (Ligand Shift):</label>
+    <input type="text" id="deltaH" value="0.1, -0.05, 0.15"/>
+
+    <label>Δ15N (Ligand Shift):</label>
+    <input type="text" id="deltaN" value="0.4, 0.6, -0.3"/>
+
+    <button onclick="simulate()">Simulate</button>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
